@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: #6462e7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6462e7), to(#b067ea));
+  background: linear-gradient(0deg, #6462e7 0%, #b067ea 100%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+}
+
+.active > .faq__question {
+  font-weight: 700;
+}
+
+.active > .faq__question img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.active > .faq__answer {
+  display: block;
+}
+
+.attribution {
+  padding-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+.attribution a {
+  color: #e7e7e9;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.faq {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-color: #fff;
+  background-position: -581px -294px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: 920px;
+  -webkit-box-shadow: 0px 20px 40px rgba(29, 30, 53, 0.3);
+          box-shadow: 0px 20px 40px rgba(29, 30, 53, 0.3);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.faq__block {
+  padding: 72px 96px 72px 0px;
+}
+
+.faq__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -84px center;
+}
+
+.faq__img-girl-bg {
+  position: absolute;
+}
+
+.faq__img-box {
+  -webkit-transform: translate(-50%, 27%);
+          transform: translate(-50%, 27%);
+}
+
+.faq__img-mobilebox {
+  display: none;
+}
+
+.faq__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.faq__item {
+  border-bottom: 1px solid #e7e7e9;
+  position: relative;
+  padding: 16px 0 0;
+  cursor: pointer;
+  color: #4a4b5e;
+}
+
+.faq__item:not(.active) > .faq__answer {
+  display: none;
+}
+
+.faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.faq__question img {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.faq__answer {
+  color: #787887;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1090px) {
+  .faq {
+    width: 327px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    background-image: url("/images/bg-pattern-mobile.svg");
+    background-color: #fff;
+    background-position: center top;
+  }
+  .faq__images {
+    display: block;
+    background: none;
+    text-align: center;
+    height: 80px;
+  }
+  .faq__title {
+    text-align: center;
+  }
+  .faq__img-box {
+    display: none;
+  }
+  .faq__img-mobilebox {
+    -webkit-transform: translate(6%, -55%);
+            transform: translate(6%, -55%);
+    display: block;
+  }
+  .faq__block {
+    padding: 48px 24px;
+  }
+}

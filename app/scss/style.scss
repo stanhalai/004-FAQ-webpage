@@ -1,0 +1,120 @@
+@import "reset";
+@import "globals";
+@import "vars";
+
+.attribution {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .attribution a {
+    color: $lightGrayishBlue;
+  }
+
+.container {
+    margin: 0 auto;
+}
+
+.faq {
+
+    background-image: url('/images/bg-pattern-desktop.svg');
+    background-color: #fff;
+    background-position: -581px -294px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 920px;
+    box-shadow: 0px 20px 40px rgba($veryDarkDesaturatedBlue, 0.3);
+    // padding: 72px 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &__block {
+        padding: 72px 96px 72px 0px;
+    }
+    &__images {
+        display: flex;
+        align-items: center;
+        background: url(/images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -84px center;
+    }
+    &__img-girl-bg {
+        position: absolute;
+
+        // z-index: -2;
+    }
+    &__img-box {
+        // z-index: 1;
+        transform: translate(-50%, 27%)
+    }
+    &__img-mobilebox {
+        display: none;
+    }
+    &__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    &__item {
+        border-bottom: 1px solid $lightGrayishBlue;
+        position: relative;
+        padding: 16px 0 0;
+        cursor: pointer;
+        color: $veryDarkGrayishBlue;
+    }
+    &__item:not(.active) {
+        &>.faq__answer {
+            display: none;
+        }
+
+    }
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__question img{
+        transition: all 250ms ease-in-out;
+    }
+
+    
+    &__answer{
+        color: $darkGrayishBlue;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .faq {
+        width: 327px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-image: url('/images/bg-pattern-mobile.svg');
+        background-color: #fff;
+        background-position: center top;
+        
+        &__images {
+            display: block;
+            // position: relative;
+            background: none;
+            text-align: center;
+            height: 80px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__img-box {
+            display: none;
+        }
+        &__img-mobilebox {
+            // position: absolute;
+            transform: translate(6%, -55%);
+            display: block;
+        }
+        &__block {
+            padding: 48px 24px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(100,98,231);
+    background: linear-gradient(0deg, rgba(100,98,231,1) 0%, rgba(176,103,234,1) 100%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+.active {
+    
+    &>.faq__question {
+        font-weight: 700;
+    }
+    &>.faq__question img {
+            transform: rotate(180deg);
+        }
+    &>.faq__answer {
+        display: block;
+    }
+}
