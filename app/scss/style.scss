@@ -7,11 +7,11 @@
     font-size: 12px;
     text-align: center;
     color: #fff;
-  }
-  
-  .attribution a {
+}
+
+.attribution a {
     color: $lightGrayishBlue;
-  }
+}
 
 .container {
     margin: 0 auto;
@@ -29,9 +29,11 @@
     // padding: 72px 96px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     &__block {
         padding: 72px 96px 72px 0px;
     }
+
     &__images {
         display: flex;
         align-items: center;
@@ -39,47 +41,56 @@
         background-repeat: no-repeat;
         background-position: -84px center;
     }
+
     &__img-girl-bg {
         position: absolute;
 
         // z-index: -2;
     }
+
     &__img-box {
         // z-index: 1;
         transform: translate(-50%, 27%)
     }
+
     &__img-mobilebox {
         display: none;
     }
+
     &__title {
         font-size: 28px;
         margin-bottom: 24px;
     }
+
     &__item {
         border-bottom: 1px solid $lightGrayishBlue;
         position: relative;
         padding: 16px 0 0;
-        cursor: pointer;
+
         color: $veryDarkGrayishBlue;
     }
+
     &__item:not(.active) {
         &>.faq__answer {
             display: none;
         }
 
     }
+
     &__question {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
     }
-    &__question img{
+
+    &__question img {
         transition: all 250ms ease-in-out;
     }
 
-    
-    &__answer{
+
+    &__answer {
         color: $darkGrayishBlue;
         margin-bottom: 16px;
     }
@@ -94,7 +105,7 @@
         background-image: url('/images/bg-pattern-mobile.svg');
         background-color: #fff;
         background-position: center top;
-        
+
         &__images {
             display: block;
             // position: relative;
@@ -102,17 +113,21 @@
             text-align: center;
             height: 80px;
         }
+
         &__title {
             text-align: center;
         }
+
         &__img-box {
             display: none;
         }
+
         &__img-mobilebox {
             // position: absolute;
             transform: translate(6%, -55%);
             display: block;
         }
+
         &__block {
             padding: 48px 24px;
         }

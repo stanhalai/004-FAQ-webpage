@@ -158,7 +158,6 @@ body {
   border-bottom: 1px solid #e7e7e9;
   position: relative;
   padding: 16px 0 0;
-  cursor: pointer;
   color: #4a4b5e;
 }
 
@@ -167,6 +166,7 @@ body {
 }
 
 .faq__question {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
